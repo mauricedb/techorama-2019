@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Loading from "./loading";
+import jokesResource from "./jokes-resource";
 
 type Joke = { id: number; joke: string };
 
@@ -38,20 +39,22 @@ class Jokes extends Component<JokesProps, JokesState> {
 }
 
 const Jokes2: React.FC<JokesProps> = ({ url }) => {
-  const [{ jokes, loading }, setState] = React.useState(initialState);
+  //   const [{ jokes, loading }, setState] = React.useState(initialState);
 
-  React.useEffect(() => {
-    const fetchJokes = async () => {
-      const rsp = await fetch(url);
-      const jokes = await rsp.json();
-      setState({ jokes, loading: false });
-    };
-    fetchJokes();
-  }, [url]);
+  //   React.useEffect(() => {
+  //     const fetchJokes = async () => {
+  //       const rsp = await fetch(url);
+  //       const jokes = await rsp.json();
+  //       setState({ jokes, loading: false });
+  //     };
+  //     fetchJokes();
+  //   }, [url]);
 
-  if (loading) {
-    return <Loading />;
-  }
+  //   if (loading) {
+  //     return <Loading />;
+  //   }
+
+  const jokes = jokesResource.read(url) as Joke[];
 
   return (
     <div>
