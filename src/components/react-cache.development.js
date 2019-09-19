@@ -7,16 +7,16 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-'use strict';
+// 'use strict';
 
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== "production") {
   (function() {
-    'use strict';
+    // "use strict";
 
-    Object.defineProperty(exports, '__esModule', { value: true });
+    Object.defineProperty(exports, "__esModule", { value: true });
 
-    var React = require('react');
-    var scheduler = require('scheduler');
+    var React = require("react");
+    var scheduler = require("scheduler");
 
     /**
      * Similar to invariant but only logs a warning if the condition is not met.
@@ -27,7 +27,7 @@ if (process.env.NODE_ENV !== 'production') {
 
     var warningWithoutStack = function() {};
 
-    {
+    if (true) {
       warningWithoutStack = function(condition, format) {
         for (
           var _len = arguments.length,
@@ -41,22 +41,22 @@ if (process.env.NODE_ENV !== 'production') {
 
         if (format === undefined) {
           throw new Error(
-            '`warningWithoutStack(condition, format, ...args)` requires a warning ' +
-              'message argument'
+            "`warningWithoutStack(condition, format, ...args)` requires a warning " +
+              "message argument"
           );
         }
         if (args.length > 8) {
           // Check before the condition to catch violations early.
           throw new Error(
-            'warningWithoutStack() currently supports at most 8 arguments.'
+            "warningWithoutStack() currently supports at most 8 arguments."
           );
         }
         if (condition) {
           return;
         }
-        if (typeof console !== 'undefined') {
+        if (typeof console !== "undefined") {
           var _args$map = args.map(function(item) {
-              return '' + item;
+              return "" + item;
             }),
             a = _args$map[0],
             b = _args$map[1],
@@ -67,7 +67,7 @@ if (process.env.NODE_ENV !== 'production') {
             g = _args$map[6],
             h = _args$map[7];
 
-          var message = 'Warning: ' + format;
+          var message = "Warning: " + format;
 
           // We intentionally don't use spread (or .apply) because it breaks IE9:
           // https://github.com/facebook/react/issues/13610
@@ -101,7 +101,7 @@ if (process.env.NODE_ENV !== 'production') {
               break;
             default:
               throw new Error(
-                'warningWithoutStack() currently supports at most 8 arguments.'
+                "warningWithoutStack() currently supports at most 8 arguments."
               );
           }
         }
@@ -111,7 +111,7 @@ if (process.env.NODE_ENV !== 'production') {
           // to find the callsite that caused this warning to fire.
           var argIndex = 0;
           var _message =
-            'Warning: ' +
+            "Warning: " +
             format.replace(/%s/g, function() {
               return args[argIndex++];
             });
@@ -266,29 +266,29 @@ if (process.env.NODE_ENV !== 'production') {
 
       if (dispatcher === null) {
         throw new Error(
-          'react-cache: read and preload may only be called from within a ' +
+          "react-cache: read and preload may only be called from within a " +
             "component's render. They are not supported in event handlers or " +
-            'lifecycle methods.'
+            "lifecycle methods."
         );
       }
       return dispatcher.readContext(Context, observedBits);
     }
 
     function identityHashFn(input) {
-      {
+      if (true) {
         !(
-          typeof input === 'string' ||
-          typeof input === 'number' ||
-          typeof input === 'boolean' ||
+          typeof input === "string" ||
+          typeof input === "number" ||
+          typeof input === "boolean" ||
           input === undefined ||
           input === null
         )
           ? warningWithoutStack$1(
               false,
-              'Invalid key type. Expected a string, number, symbol, or boolean, ' +
-                'but instead received: %s' +
-                '\n\nTo use non-primitive values as keys, you must pass a hash ' +
-                'function as the second argument to createResource().',
+              "Invalid key type. Expected a string, number, symbol, or boolean, " +
+                "but instead received: %s" +
+                "\n\nTo use non-primitive values as keys, you must pass a hash " +
+                "function as the second argument to createResource().",
               input
             )
           : void 0;
