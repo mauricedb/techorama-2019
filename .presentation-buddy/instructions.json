@@ -62,6 +62,11 @@
     ]
   },
   {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+
+  {
     "type": "typeText",
     "text": [
       "",
@@ -75,6 +80,56 @@
       "  }, [url]);",
       ""
     ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+
+  {
+    "type": "goto",
+    "line": 42
+  },
+  {
+    "type": "command",
+    "command": "cursorDownSelect",
+    "repeat": 10
+  },
+  {
+    "type": "command",
+    "command": "editor.action.clipboardCutAction"
+  },
+  {
+    "type": "goto",
+    "line": 40
+  },
+  {
+    "type": "typeText",
+    "text": ["", "const useJokes = (url: string): JokesState => {", "", "}", ""]
+  },
+  {
+    "type": "goto",
+    "line": 42
+  },
+  {
+    "type": "command",
+    "command": "editor.action.clipboardPasteAction"
+  },
+  {
+    "type": "typeText",
+    "text": ["", "  return { loading, jokes };"]
+  },
+  {
+    "type": "goto",
+    "line": 57
+  },
+  {
+    "type": "typeText",
+    "text": ["  const { loading, jokes } = useJokes(url);", ""]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
   },
 
   {
