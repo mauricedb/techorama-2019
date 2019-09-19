@@ -3,7 +3,7 @@ import "./App.css";
 import Jokes from "./components/jokes";
 
 const App: React.FC = () => {
-  const [displayJokes, setDisplayJokes] = React.useState(false);
+  const [displayJokes, setDisplayJokes] = React.useState(true);
 
   return (
     <div>
