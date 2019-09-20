@@ -133,6 +133,63 @@
   },
 
   {
+    "type": "openFile",
+    "path": "src/App.tsx"
+  },
+  {
+    "type": "goto",
+    "line": 4
+  },
+  {
+    "type": "command",
+    "command": "editor.action.commentLine"
+  },
+  {
+    "type": "goto",
+    "line": 5
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "import Loading from \"./components/loading\";",
+      "",
+      "const Jokes = React.lazy(() => import(\"./components/jokes\"));",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 1,
+    "column": 13
+  },
+  {
+    "type": "typeText",
+    "text": [", { Suspense }"]
+  },
+  {
+    "type": "goto",
+    "line": 13,
+    "column": 999
+  },
+  {
+    "type": "typeText",
+    "text": ["", "     <Suspense fallback={<Loading />}>"]
+  },
+  {
+    "type": "goto",
+    "line": 26,
+    "column": 999
+  },
+  {
+    "type": "typeText",
+    "text": ["", "     </Suspense>"]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+
+  {
     "skip": true,
     "type": "typeText",
     "text": [
