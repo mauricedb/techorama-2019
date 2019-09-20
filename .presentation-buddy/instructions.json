@@ -190,6 +190,64 @@
   },
 
   {
+    "type": "createFile",
+    "path": "src/components/jokes-resource.ts"
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "// import { unstable_createResource } from \"react-cache\";",
+      "import { unstable_createResource } from \"./react-cache.development\";",
+      "",
+      "const jokesResource = unstable_createResource(async (url: string) => {",
+      "  const rsp = await fetch(url);",
+      "  const jokes = await rsp.json();",
+      "  return jokes;",
+      "});",
+      "",
+      "export default jokesResource;"
+    ]
+  },
+
+  {
+    "type": "openFile",
+    "path": "src/components/jokes.tsx"
+  },
+  {
+    "type": "goto",
+    "line": 3
+  },
+  {
+    "type": "typeText",
+    "text": ["import jokesResource from \"./jokes-resource\";", ""]
+  },
+  {
+    "type": "goto",
+    "line": 58
+  },
+  {
+    "type": "command",
+    "command": "cursorDownSelect",
+    "repeat": 5
+  },
+  {
+    "type": "command",
+    "command": "editor.action.commentLine"
+  },
+  {
+    "type": "goto",
+    "line": 63
+  },
+  {
+    "type": "typeText",
+    "text": ["", "  const jokes = jokesResource.read(url) as Joke[];", ""]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+
+  {
     "skip": true,
     "type": "typeText",
     "text": [

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Loading from "./loading";
-import jokesResource from "./jokes-resource";
+// import jokesResource from "./jokes-resource";
 
 type Joke = { id: number; joke: string };
 
@@ -54,15 +54,15 @@ const Jokes2: React.FC<JokesProps> = ({ url }) => {
   //     return <Loading />;
   //   }
 
-  const jokes = jokesResource.read(url) as Joke[];
+  // const jokes = jokesResource.read(url) as Joke[];
 
   return (
     <div>
       <h2>Jon Skeet Jokes</h2>
       <ul>
-        {jokes.map(item => (
+        {/* {jokes.map(item => (
           <li key={item.id}>{item.joke}</li>
-        ))}
+        ))} */}
       </ul>
     </div>
   );
