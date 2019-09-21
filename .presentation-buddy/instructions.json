@@ -208,6 +208,14 @@
       "export default jokesResource;"
     ]
   },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.closeActiveEditor"
+  },
 
   {
     "type": "openFile",
@@ -246,67 +254,124 @@
     "type": "command",
     "command": "workbench.action.files.save"
   },
-
   {
-    "skip": true,
-    "type": "typeText",
-    "text": [
-      "// This code is typed by Presentation Buddy",
-      "",
-      "class Calculator {",
-      "  add(x, y) {",
-      "    return x + y;",
-      "  }",
-      "}"
-    ]
+    "type": "openFile",
+    "path": "src/App.tsx"
   },
   {
-    "skip": true,
     "type": "goto",
-    "line": 4,
-    "column": 1
+    "line": 1,
+    "column": 25
   },
   {
-    "skip": true,
+    "type": "typeText",
+    "text": [", StrictMode"]
+  },
+  {
+    "type": "goto",
+    "line": 12,
+    "column": 999
+  },
+  {
+    "type": "typeText",
+    "text": ["", "   <StrictMode>"]
+  },
+  {
+    "type": "goto",
+    "line": 29,
+    "column": 999
+  },
+  {
+    "type": "typeText",
+    "text": ["", "   </StrictMode>"]
+  },
+  {
     "type": "command",
     "command": "workbench.action.files.save"
   },
+
   {
-    "skip": true,
+    "type": "openFile",
+    "path": "src/components/clock.tsx"
+  },
+  {
+    "type": "goto",
+    "line": 11,
+    "column": 12
+  },
+  {
     "type": "command",
-    "command": "workbench.action.closeActiveEditor"
+    "command": "editor.action.smartSelect.expand"
   },
   {
-    "skip": true,
-    "type": "createFile",
-    "path": "src/demo.js"
+    "type": "typeText",
+    "text": ["Did"]
   },
   {
-    "skip": true,
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+
+  {
+    "type": "openFile",
+    "path": "src/index.tsx"
+  },
+  {
+    "type": "goto",
+    "line": 8
+  },
+  {
+    "type": "command",
+    "command": "editor.action.commentLine"
+  },
+  {
+    "type": "goto",
+    "line": 9
+  },
+  {
+    "type": "typeText",
+    "text": ["ReactDOM.unstable_createRoot(root).render(<App />);", ""]
+  },
+
+  {
+    "type": "openFile",
+    "path": "src/App.tsx"
+  },
+  {
+    "type": "goto",
+    "line": 6
+  },
+  {
     "type": "typeText",
     "text": [
-      "// This code is typed by Presentation Buddy",
       "",
-      "const Calculator = require('./calculator');",
-      "",
-      "const calc = new Calculator();",
-      "const sum = calc.add(1, 2)",
-      "console.log(`The sum of 1 + 2 = ${sum}`);"
+      "import { unstable_scheduleCallback, unstable_NormalPriority } from \"scheduler\";",
+      ""
     ]
   },
   {
-    "skip": true,
-    "type": "openFile",
-    "path": "src/calculator.js"
+    "type": "goto",
+    "line": 24,
+    "column": 999
   },
   {
-    "skip": true,
     "type": "command",
-    "command": "cursorBottom"
+    "command": "editor.action.commentLine"
   },
   {
-    "skip": true,
     "type": "typeText",
-    "text": ["", "module.exports = Calculator;"]
+    "text": [
+      "",
+      "                onChange={() => {",
+      "                  unstable_scheduleCallback(unstable_NormalPriority, () => ",
+      "                    setDisplayJokes(!displayJokes)",
+      "                  );",
+      "                }}",
+      ""
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
   }
 ]
