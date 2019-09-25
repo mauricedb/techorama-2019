@@ -65,7 +65,19 @@
     "type": "command",
     "command": "workbench.action.files.save"
   },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
 
+  {
+    "type": "openFile",
+    "path": "src/components/jokes.tsx"
+  },
+  {
+    "type": "goto",
+    "line": 43
+  },
   {
     "type": "typeText",
     "text": [
@@ -85,7 +97,15 @@
     "type": "command",
     "command": "workbench.action.files.save"
   },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
 
+  {
+    "type": "openFile",
+    "path": "src/components/jokes.tsx"
+  },
   {
     "type": "goto",
     "line": 42
@@ -130,6 +150,10 @@
   {
     "type": "command",
     "command": "workbench.action.files.save"
+  },
+  {
+    "type": "wait",
+    "delay": "manual"
   },
 
   {
@@ -188,6 +212,10 @@
     "type": "command",
     "command": "workbench.action.files.save"
   },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
 
   {
     "type": "createFile",
@@ -211,6 +239,10 @@
   {
     "type": "command",
     "command": "workbench.action.files.save"
+  },
+  {
+    "type": "wait",
+    "delay": "manual"
   },
   {
     "type": "command",
@@ -255,6 +287,10 @@
     "command": "workbench.action.files.save"
   },
   {
+    "type": "wait",
+    "delay": "manual"
+  },
+  {
     "type": "openFile",
     "path": "src/App.tsx"
   },
@@ -289,6 +325,10 @@
     "type": "command",
     "command": "workbench.action.files.save"
   },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
 
   {
     "type": "openFile",
@@ -311,6 +351,10 @@
     "type": "command",
     "command": "workbench.action.files.save"
   },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
 
   {
     "type": "openFile",
@@ -331,6 +375,14 @@
   {
     "type": "typeText",
     "text": ["ReactDOM.unstable_createRoot(root).render(<App />);", ""]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "wait",
+    "delay": "manual"
   },
 
   {
