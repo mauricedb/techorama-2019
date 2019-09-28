@@ -21,19 +21,15 @@
   },
   {
     "type": "typeText",
-    "text": [
-      "",
-      "const HookedJokes: React.FC<JokesProps> = ({ url }) => {",
-      "}",
-      "",
-      "export default HookedJokes;"
-    ]
+    "text": ["", "const Jokes: React.FC<JokesProps> = ({ url }) => {", "}", ""]
   },
   {
+    "skip": true,
     "type": "goto",
     "line": 45
   },
   {
+    "skip": true,
     "type": "command",
     "command": "editor.action.commentLine"
   },
@@ -61,6 +57,21 @@
       ""
     ]
   },
+
+  {
+    "type": "goto",
+    "line": 14
+  },
+  {
+    "type": "command",
+    "command": "editor.action.smartSelect.expand",
+    "repeat": 2
+  },
+  {
+    "type": "command",
+    "command": "editor.action.clipboardCutAction"
+  },
+
   {
     "type": "command",
     "command": "workbench.action.files.save"
@@ -76,7 +87,7 @@
   },
   {
     "type": "goto",
-    "line": 43
+    "line": 13
   },
   {
     "type": "typeText",
@@ -108,7 +119,7 @@
   },
   {
     "type": "goto",
-    "line": 42
+    "line": 12
   },
   {
     "type": "command",
@@ -121,7 +132,7 @@
   },
   {
     "type": "goto",
-    "line": 40
+    "line": 10
   },
   {
     "type": "typeText",
@@ -129,7 +140,7 @@
   },
   {
     "type": "goto",
-    "line": 42
+    "line": 12
   },
   {
     "type": "command",
@@ -141,7 +152,7 @@
   },
   {
     "type": "goto",
-    "line": 57
+    "line": 27
   },
   {
     "type": "typeText",
@@ -263,7 +274,7 @@
   },
   {
     "type": "goto",
-    "line": 58
+    "line": 28
   },
   {
     "type": "command",
@@ -276,7 +287,7 @@
   },
   {
     "type": "goto",
-    "line": 63
+    "line": 33
   },
   {
     "type": "typeText",
