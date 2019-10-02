@@ -8,7 +8,7 @@ class Clock extends Component<{}, ClockState> {
   handle = 0;
   state = { now: new Date() };
 
-  componentWillMount() {
+  componentDidMount() {
     this.handle = window.setInterval(
       () => this.setState({ now: new Date() }),
       1000
